@@ -1,30 +1,8 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
-int main()
+void printArray(int arr[], lenght)
 {
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-    int n;
-    scanf("%d", &n);
-
-    if (n > 1000)
+    for (int i = 0; i < length; i++)
     {
-        printf("I will buy Punjabi \n");
-        // buying shoes
-        int remaining = n - 1000;
-        if (remaining >= 500)
-        {
-            printf("I will buy new shoes \n");
-            printf("Alisa will buy new shoes \n");
-        }
+        printf("%d ", arr[i]);
     }
-    else
-    {
-        printf("Bad luck! \n");
-    }
-
-    return 0;
 }
