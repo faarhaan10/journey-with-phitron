@@ -27,8 +27,14 @@ int main()
         {
             for (int j = 0; j < cols; j++)
             {
-                if (i + j == rows - 1)
+                if (i == j)
+                {
+                    if (a[i][j] != a[0][0])
+                    {
+                        flag = 0;
+                    }
                     continue;
+                }
 
                 int input = a[i][j];
                 if (input != 0)
@@ -44,11 +50,11 @@ int main()
     }
     if (flag)
     {
-        printf("Secondary Diagonal Matrix");
+        printf("Scalar Matrix");
     }
     else
     {
-        printf("Not a Secondary Diagonal Matrix");
+        printf("Not a Scalar Matrix");
     }
 
     return 0;
